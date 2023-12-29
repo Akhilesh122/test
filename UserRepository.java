@@ -5,12 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import com.example.demo.model.User;
 
-import jakarta.persistence.Id;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Id> {
-
-	void deleteById(Long id);
-	
+public interface UserRepository extends JpaRepository<User, Long> {
 
 }
